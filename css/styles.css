@@ -31,7 +31,7 @@ button {
     padding-left: 156px;
     padding-right: 156px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 /*?-------------------HEADER-------------- */
 
@@ -39,6 +39,17 @@ button {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.header-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;    
+}
+
 .header-logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -47,10 +58,17 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-color {
     color: #2E2F42;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+    
 }
 
 .header-menu-link {
@@ -70,8 +88,14 @@ button {
     color: #404BBF;
 }
 
+.header-addres-list {
+    display: flex;
+    gap: 40px
+}
+
 .menu-address {
     font-style: normal;
+    align-items: center;
 }
 
 .menu-contact {
@@ -127,7 +151,19 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background-color: #4D5AE5;
+    /* background-color: #4D5AE5; */
+    border-radius: 4px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    padding: 16px 32px;
+    gap: 10px;
+    margin: 0 auto;
+
+}
+
+.banner-button {
+    display: flex;
 }
 
 .main-banner-btn:hover {
@@ -147,6 +183,11 @@ button {
 
 .bussiness-title {}
 
+.business-list {
+    display: flex;
+    gap: 24px;
+}
+
 .bussiness-subtitle {
     color: #2E2F42;
     font-size: 20px;
@@ -161,12 +202,16 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
 }
 
 /*! -------------------OUR TEAM-------------- */
 
-.team-container {
+.team {
     background-color: #F4F4FD;
+}
+.team-container {
+    /* background-color: #F4F4FD; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -182,13 +227,18 @@ button {
     margin-bottom: 72px;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
 
 .team-list-item {
     background: #FFFFFF;
+    
 }
 
 .team-item-img {
+    padding-bottom: 32px;
 }
 
 .team-subtitle {
@@ -198,6 +248,7 @@ button {
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
 }
 
 .team-text {
@@ -207,6 +258,7 @@ button {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 
 /*-------------------OUR PORTFOLIO-------------- */
@@ -227,7 +279,12 @@ button {
     margin-bottom: 72px;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    row-gap: 48px;
+    column-gap: 18px;
+    flex-wrap: wrap;
+}
 
 .portfolio-list-item {
     border: 1px solid #E7E9FC;
@@ -245,7 +302,8 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    padding-left: 16px;
 }
 
 .portfolio-item-text {
@@ -254,6 +312,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
+    padding-left: 16px;
 }
 
 /*?-------------------FOOTER-------------- */
@@ -273,7 +332,7 @@ button {
     line-height: 1.17; 
     letter-spacing: 0.03em;
     text-transform: uppercase;
-        margin-bottom: 16px;
+    
 }
 
 .footer-logo-color {
@@ -292,4 +351,5 @@ button {
     line-height: 1.50; 
     letter-spacing: 0.02em;
     max-width: 264px;
+    margin-top: 16px;
 }
